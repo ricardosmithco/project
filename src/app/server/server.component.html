@@ -1,1 +1,4 @@
-<p> The server with number: {{serverId}} is {{getServerStatus()}} </p>
+<p [ngStyle]="{backgroundColor: getColor()}" 
+[ngClass]="{online: serverStatus === 'online'}"> <!--key/value pair. key is css class name; value is conditions determining whether this class should be attached or not-->
+ The server with number: {{serverId}} is {{getServerStatus()}} </p>
+

@@ -11,8 +11,8 @@ class="form-control"
 [disabled]="!allowNewServer" 
 (click)="onCreateServer()">Add Server</button>
 <p *ngIf="serverCreated">{{serverCreationStatus}}</p>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+
 <hr>
 
 <h3>Personal Info section:</h3>
