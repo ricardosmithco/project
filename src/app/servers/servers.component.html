@@ -21,7 +21,7 @@ class="form-control"
 (click)="toggleDisplayDetails()">Display Details</button>
 <p *ngIf="display">Badman</p>
 <p *ngFor="let click of clicks; let i = index" 
-[ngClass]="{myClass: i > 4}"</p> <!--because index begins with 0-->
-[ngStyle]="{backgroundColor: i > 4? 'blue': 'white'}">{{click}}</p>
+[ngClass]="{myClass: i > 4}" 
+[ngStyle]="{backgroundColor: i > 4? 'blue': 'white'}">{{click}}</p> <!--because index begins with 0-->
 
 
