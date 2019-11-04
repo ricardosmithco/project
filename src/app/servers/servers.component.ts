@@ -39,5 +39,17 @@ export class ServersComponent implements OnInit {
   resetUsername(){
     this.username = '';
   }
+  paragraph = '';
+  allowDetails = true;
+  x = 0;
+
+  clicks = [];
+
+  display = false;
+
+  toggleDisplayDetails(){
+    this.display = !this.display;
+    this.clicks.push(new Date());
+  }
 
 }
